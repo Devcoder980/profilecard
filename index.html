@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    /* body{
+      width: 100%;
+    height: 47vw;
+    border: 2px solid;
+    } */
+    body {
+      font-family: monospace;
+    }
+
+    .continer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 700px;
+      /* background-color: #19a1ad; 
+      background: url("") left top  no-repeat #19a1ad;
+      background:  left bottom  no-repeat #19a1ad; */
+      background: url("images/bg-pattern-top.svg") left top no-repeat,url("images/bg-pattern-bottom.svg") right bottom no-repeat #19a1ad ; 
+      background-size: 544px 518px;
+
+
+    }
+
+    .box {
+      border: 2px solid;
+      /* width: 26%;
+      height: 55%; */
+      background-color: white;
+      border-radius: 17px;
+      height: 306px;
+    }
+
+    .photo {
+      display: block;
+      text-align: center;
+      margin-bottom: 64px;
+      background-image: url("images/bg-pattern-card.svg");
+      border-radius: 15px 14px 0px 0px;
+
+    }
+
+    .photo img {
+      border-radius: 61%;
+      position: relative;
+      top: 52px;
+      /* border-radius: 20px; */
+    }
+
+    .align {
+      text-align: center;
+      margin-bottom: 8px;
+      padding: 0px 92px;
+    }
+
+    .aligne {
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      padding-top: 23px;
+      border-top: 1px solid #c1bdbd;
+    }
+
+    .color {
+      color: #999595;
+    }
+    .bold{
+      font-size: 21px;
+    font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="continer">
+    <div class="box">
+      <div class="photo"><img src="/profile-card-component-main/images/image-victor.jpg" alt=""></div>
+
+      <div>
+        <h3 class="align">Victor Crest 26</h3>
+      </div>
+      <div>
+        <h5 class="aligne color" style="font-size: 14px;"> London</h5>
+      </div>
+
+      <!-- detial of followers -->
+      <div class="flex">
+        <div class="box1">
+          <div class="bold">80K</div>
+          <div class="color">Followers</div>
+        </div>
+        <div class="box1">
+          <div class="bold">803K</div>
+          <div class="color">Likes</div>
+        </div>
+        <div class="box1">
+          <div class="bold">1.4K</div>
+          <div class="color">Photos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Prabhudev bind</a>.
+  </div> -->
+</body>
+
+</html>
